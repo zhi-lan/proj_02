@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>精灵动画</title>
+  <style>
+    .box {
+      /* 1680/12:保证显示区域的尺寸和精灵图的尺寸相同 */
+      width: 140px;
+      height: 140px;
+      /* border: 1px solid #000; */
+      background-image: url(./images/bg.png);
+      animation: change 1s steps(12) infinite,
+      run 3s forwards;
+
+    }
+@keyframes change{
+  /* from{
+    background-position: 0 0;
+  } */
+  to{
+    /* 精灵图的宽度 */
+    background-position: -1680px 0;
+  }
+
+}
+  /* 定义一个盒子动画 */
+  @keyframes run {
+    /* 动画的开始状态如果和默认状态相同，可以省略原始代码 */
+    /* from{
+      transform: translateX(0);
+    } */
+    to{
+      transform: translateX(600px);
+    }    
+  }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

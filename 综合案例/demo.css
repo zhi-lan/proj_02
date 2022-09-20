@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+li{
+    position: relative;
+    float: left;
+    width: 350px;
+    text-decoration: none;
+    overflow: hidden;
+}
+img{
+    position: relative;
+    width: 350px;
+    transition: all .5s;
+}
+.box li{
+    margin-left: 25px;
+}
+.box li:nth-child(1){
+    margin-left: 0;
+}
+/* 标题格式 */
+.box .title{
+    /* 子绝夫相 */
+    position: absolute;
+    left: 15px;
+    bottom: 17px;
+/* 文字不被阴影覆盖 */
+      z-index: 2; 
+    width: 300px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    transition: all .5s;
+
+
+}
+/* 了解更多放到盒子外面 */
+.box .more{
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    color: #fff;
+}
+/* 产品格式样式 */
+.box .title span{
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 阴影 */
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 260px;
+    background-image: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.8)
+    );
+    opacity: 0;
+    transition: all .5s;
+}
+
+/* 鼠标移动后展示的效果,文字上移 */
+li:hover .title{
+    transform: translateY(-50px);
+}
+/* 阴影渐变 */
+li:hover .mask{
+    opacity: 1;
+}
+
+/* 图片渐变大 */
+li:hover img{
+    transform: scale(1.1);
+}

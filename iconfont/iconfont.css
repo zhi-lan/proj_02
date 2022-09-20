@@ -1,0 +1,68 @@
+/* 定义字体 */
+@font-face {
+  font-family: "iconfont"; /* Project id 3528647 */
+  src: url('iconfont.woff2?t=1658111024188') format('woff2'),
+       url('iconfont.woff?t=1658111024188') format('woff'),
+       url('iconfont.ttf?t=1658111024188') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-all-fill:before {
+  content: "\e718";
+}
+
+.icon-favorites-fill:before {
+  content: "\e721";
+}
+
+.icon-integral-fill:before {
+  content: "\e726";
+}
+
+.icon-namecard-fill:before {
+  content: "\e72a";
+}
+
+.icon-stop-fill:before {
+  content: "\e738";
+}
+
+.icon-column:before {
+  content: "\e741";
+}
+
+.icon-column1:before {
+  content: "\e742";
+}
+
+.icon-add:before {
+  content: "\e743";
+}
+
+.icon-agriculture:before {
+  content: "\e744";
+}
+
+.icon-years:before {
+  content: "\e745";
+}
+
+.icon-cart-full:before {
+  content: "\e746";
+}
+
+.icon-search:before {
+  content: "\e7b3";
+}
+
+.icon-pcm:before {
+  content: "\e7d0";
+}
+

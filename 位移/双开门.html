@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 1366px;
+            height: 600px;
+            margin: 0 auto;
+            background: url('../images/bg.jpg');
+            /* 超出父级范围的要隐藏 */
+            overflow: hidden;
+        } 
+        /* 左右相同的样式 */
+        /* 为元素：行内显示模式 */
+        .box::before,
+        .box::after{
+            float: left;
+            content: '';
+            width: 50%;
+            height: 600px;
+            background-image: url('../images/fm.jpg');
+            transition: all .5s;
+        }
+        /* 单独改变：after的内容 */
+        .box::after{
+            background-position: right 0;
+        }
+        /* 鼠标移入到.box，before向左移动 */
+        .box:hover::before{
+            transform: translate(-100%);
+        }
+        /* 鼠标移动到.bao，after向右移动 */
+        .box:hover::after{
+            transform: translate(100%);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+
+</div>
+</body>
+</html>

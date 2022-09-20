@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位移</title>
+    <style>
+        .father{
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #000;
+        }
+         .son{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            transition: all 0.5s;
+         }
+         .father:hover .son{
+            transform:  translate(50px,100px);
+            /* 如果是百分比参考盒子自身尺寸计算结果 */
+            transform: translate(-50%,-100%);
+            /* 水平方向 */
+            transform: translate(50px);
+            /* 竖直方向 */
+            transform: translateY(50px);
+         }
+    </style>
+</head>
+<body>
+  <div class="father">
+    <div class="son">
+
+    </div>
+  </div>
+</body>
+</html>
